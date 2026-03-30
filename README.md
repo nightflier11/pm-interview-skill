@@ -35,18 +35,38 @@ A structured mock interview coaching skill for product management roles — from
 
 ---
 
-## Scoring dimensions
+## Feedback structure
 
-Each mock answer is scored across 5–7 dimensions specific to the question, for example:
+Each answer gets structured feedback across four areas:
 
-- Strategic clarity
-- Use of concrete examples
-- Metrics grounding
-- Trade-off reasoning
-- Stakeholder awareness
-- Failure / learning signal
+- **What's landing** — specific strength and why it works, including any standout phrase or idea
+- **What's missing** — the exact gap and what the interviewer will think if it stays
+- **Sharpening suggestions** — a concrete rewrite of the weak section, not just a direction
+- **Polished version** — written in your voice, preserving your best ideas, in spoken cadence
 
-Ratings: **Excellent · Strong · Needs sharpening · Missing**
+## Scorecard
+
+Each answer is scored across 5–7 dimensions specific to the question:
+
+| Dimension | Rating |
+|---|---|
+| Strategic clarity | ✅ Excellent / ✅ Strong / ⚠️ Needs sharpening / ❌ Missing |
+| Use of concrete examples | … |
+| Metrics grounding | … |
+| Trade-off reasoning | … |
+| Failure / learning signal | … |
+
+## Coaching philosophy
+
+Seven principles govern every session:
+
+1. **Lead with what's landing** before what's missing — name it specifically, never generic praise
+2. **Distinguish instinct from structure** — "Your instinct is right — what's missing is the structure around it"
+3. **Push for the concrete** — vague answers at Director level are disqualifying
+4. **Failure stories are highest signal** — a candidate who only shares successes signals they haven't built anything hard
+5. **Track the through-line** — coherence across answers separates Director candidates from Senior PMs
+6. **Don't shortcut the thinking** — push candidates to complete the answer before filling the gap
+7. **The interviewer tests three things at once** — surface question, what's underneath, and the meta-signal
 
 ---
 
