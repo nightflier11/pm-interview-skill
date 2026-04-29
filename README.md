@@ -8,11 +8,12 @@ A structured mock interview coaching skill for product management roles — from
 
 1. **Orient** — Establishes role level, target company, focus areas, session mode (Interviewer vs Coach), and practice medium (voice recommended)
 2. **Candidate Context** *(Phase 1.5)* — Ingests your resume, LinkedIn, GitHub, and past work to build a personalised profile and map your experience to 7 producteer story types
-3. **Company Research** — Produces a Strategic Context Brief (5-7 insights) + Interview Process Map (round-by-round breakdown with prep weighting)
-4. **Question Generation** — Creates 8–12 company-specific questions with deep dives for product sense, analytical, execution, and builder mindset rounds
-5. **Mock Q&A** — Runs in two modes (see below); includes follow-up probes, pacing coaching, and per-answer scorecards
-6. **Session Debrief** — Synthesises patterns across answers, delivers a hire-signal summary, and maintains a gap coverage tracker across sessions
-7. **Exports** — Interview prep brief (.docx), answer bank (.md), or session-over-session progress report (.md)
+3. **Interviewer Context** *(Phase 1.75, optional)* — If you know who's interviewing you, the skill researches their LinkedIn, career history, and domain expertise to simulate their likely style, question focus, and follow-up patterns
+4. **Company Research** — Produces a Strategic Context Brief (5-7 insights) + Interview Process Map (round-by-round breakdown with prep weighting)
+5. **Question Generation** — Creates 8–12 company-specific questions with deep dives for product sense, analytical, execution, and builder mindset rounds
+6. **Mock Q&A** — Runs in two modes (see below); includes follow-up probes, pacing coaching, and per-answer scorecards
+7. **Session Debrief** — Synthesises patterns across answers, delivers a hire-signal summary, and maintains a gap coverage tracker across sessions
+8. **Exports** — Interview prep brief (.docx), answer bank (.md), or session-over-session progress report (.md)
 
 ---
 
