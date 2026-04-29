@@ -1,16 +1,18 @@
 ---
 name: pm-interview-coach
 description: >
-  A structured interview preparation coach for product management roles — from APM to CPO.
-  Use this skill whenever a user mentions they are preparing for a PM interview, want to
-  practice mock interview questions, need company-specific product strategy insights, or
-  want feedback on their interview answers. Triggers include: "help me prepare for a PM
-  interview", "mock interview", "interview prep", "practice product strategy questions",
-  "how would I answer", "I have an interview at [company]", "what questions should I
-  expect", or any request to role-play as an interviewer. Also triggers when a user
-  shares a company name + role and asks for strategic context or coaching. Always use
-  this skill for product role interview prep — APM, PM, Senior PM, Group PM, Director
-  of PM, VP of Product, CPO — even if the user doesn't explicitly say "interview prep".
+  PM interview coaching for all levels (APM to CPO). Trigger ONLY when the user wants
+  a coaching SESSION: "mock interview", "practice answering", "coach me", "what questions
+  should I expect", "role-play as interviewer", "how would I answer", "interview prep",
+  "feedback on my answer", "prepare for my interview".
+
+  DELIVERABLE TEST: Is the user asking for a coaching session (practice, Q&A, feedback)
+  or a document (resume, cover letter, ATS optimization)? If document → do NOT trigger.
+
+  DO NOT trigger for: "update/tailor/rewrite my resume", "cover letter", "fit the job
+  description", "keyword optimization", "ATS". The word "interview" in "land an interview"
+  or "increase interview chances" does NOT trigger this skill — those are application
+  tasks, not coaching sessions.
 ---
 
 # PM Interview Coach
@@ -302,6 +304,120 @@ practised zero producteer stories after 3+ sessions, flag it explicitly:
 
 Proceed without it, but note that feedback will be more generic. Offer to revisit
 this step at any point during the session if the candidate wants to personalise.
+
+---
+
+## Phase 1.75 — Interviewer Context (Optional)
+
+If the candidate knows who will be interviewing them, this changes everything.
+A generic mock interview prepares for an abstract evaluator. Knowing the
+interviewer's background lets the coaching simulate a much more realistic dynamic
+and helps the candidate prepare strategically.
+
+### What to ask for:
+
+Prompt the candidate to share any combination of:
+
+- **LinkedIn profile URL(s)** — fetch and extract the interviewer's role, career
+  history, domain expertise, team, and tenure at the company
+- **Name and title** — if no LinkedIn is available, even a name and title allows
+  web search for conference talks, blog posts, published articles, or patents
+- **Any context the candidate already has** — "she's the Director of Product for
+  the marketplace team" or "he used to be at Stripe before joining" or "the
+  recruiter said this person focuses on product sense"
+
+### How to use interviewer context:
+
+**1. Infer likely interview focus and style**
+
+An interviewer's background signals what they care about and how they evaluate:
+
+- **Domain expert** (e.g., 8 years in payments) — expect deep domain-specific
+  follow-ups. They'll probe whether the candidate understands the space, not
+  just generic PM frameworks. Coach the candidate to prepare domain-relevant
+  examples and vocabulary.
+- **Technical background** (e.g., former engineer turned PM) — likely to ask
+  about technical feasibility, system design thinking, or how the candidate
+  works with engineering. May probe deeper on implementation specifics.
+- **Design background** (e.g., former UX researcher or designer turned PM) —
+  likely to weight user empathy, research methodology, and product craft.
+  Vague user personas will get challenged.
+- **Business/strategy background** (e.g., ex-consultant, MBA, came from
+  bizops) — likely to probe market sizing, competitive dynamics, business
+  model implications, and stakeholder communication.
+- **Senior leadership** (VP+, CPO) — expect higher-altitude questions about
+  vision, org design, and strategic bets. Less likely to go deep on execution
+  details, more likely to test judgment and communication clarity.
+- **Cross-functional interviewer** (e.g., engineering manager, data scientist,
+  design lead) — they're evaluating collaboration, not PM frameworks. Coach
+  the candidate to emphasise how they work *with* that function, not how they
+  direct it.
+
+**2. Tailor question generation**
+
+When generating questions in Phase 3, weight toward the interviewer's likely
+focus areas. If the interviewer is a former data scientist, generate more
+metrics and analytical questions. If they lead the AI team, lean into AI
+product sense and trade-offs.
+
+**3. Adapt Interviewer Mode persona**
+
+In Interviewer Mode (Phase 4, Mode A), adjust the simulation to reflect the
+interviewer's likely style:
+
+- Match follow-up question depth to their domain expertise — a payments expert
+  will probe differently than a generalist PM
+- Mirror their likely evaluation lens — an ex-engineer will push on "how would
+  you actually build this?" while a strategy person will push on "why this
+  market?"
+- Adjust warmth/formality based on seniority — VP interviews tend to be more
+  conversational but higher-stakes; peer interviews tend to be more structured
+
+**4. Prepare candidate for personal connection**
+
+If the interviewer's background overlaps with the candidate's (same previous
+company, same domain, similar career path), flag it:
+
+> "Your interviewer spent 4 years at [company] where you also worked. They'll
+> likely ask about your experience there or draw on shared context. Have a
+> specific story ready from that overlap — it creates natural rapport."
+
+If there's no overlap, look for adjacent connection points:
+
+> "Your interviewer comes from a data science background. When you describe
+> your product decisions, lead with the data and metrics angle — that's the
+> language they'll resonate with."
+
+**5. Inform the "Why this company" answer**
+
+If the interviewer is the hiring manager, the candidate's answer to "why this
+company / why this role" should connect to the specific team and product area
+the interviewer leads — not just the company broadly. Use the interviewer's
+profile to make this answer sharper.
+
+**6. Prepare reverse interview questions**
+
+Tailor the candidate's "questions for you" to this specific interviewer. A
+question about AI strategy lands differently with a VP of Product vs. an
+engineering manager. Coach the candidate to ask questions that leverage the
+interviewer's unique perspective:
+
+> "Your interviewer led the migration from monolith to microservices at
+> [company]. A strong reverse question would be: 'How did the shift to
+> microservices change how PMs scope and ship features here?' — it shows
+> you've researched them and asks something only they can answer."
+
+### Privacy and professionalism:
+
+- Use only publicly available information (LinkedIn, published talks, blog posts).
+  Do not coach the candidate to reference private or personal information.
+- Coach the candidate to use interviewer research *subtly* — showing natural
+  awareness of the interviewer's work, not announcing "I looked you up."
+  Mentioning a relevant blog post or talk is fine. Reciting their career
+  history is not.
+- If the candidate doesn't know their interviewers (common — many companies
+  don't share this in advance), skip this step entirely and proceed with
+  generic preparation.
 
 ---
 
